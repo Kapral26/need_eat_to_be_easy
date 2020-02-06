@@ -5,7 +5,7 @@ class NameClass:
 	def __init__(self):
 		pass
 
-	def do_set(self, sex, weight, hight, age):
+	def start_calc(self, sex, weight, hight, age, activity=None):
 		if sex == 'm':
 			formula_res = 9.99 * weight + 6.25 * hight - 4.92 * age + 5
 		elif sex == 'w':
@@ -31,4 +31,4 @@ class NameClass:
 
 
 if __name__ == '__main__':
-	NameClass().do_set('m', 81, 179, 26)
+	NameClass().start_calc('m', 81, 179, 26)
