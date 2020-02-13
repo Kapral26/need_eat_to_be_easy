@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from os import path
 import telebot
-from json import loads
-
+from connect_db import chk_users
 
 
 class Telegram_bot:
@@ -27,9 +26,18 @@ class Telegram_bot:
         @bot.message_handler(func=lambda message: True)
         def echo_all(message):
             ms_js = message.json['from']
+            user = message, ms_js['username']
+            if chk_users(user):
+                print('user exist')
+            else:
+                print('user not exist')
             bot.reply_to(message, ms_js['username'])
 
         bot.polling()
+
+    def chk_users(self, username):
+
+
 
 if __name__ == "__main__":
     Telegram_bot()
