@@ -17,10 +17,10 @@
   CREATE TABLE food_and_dish(
 	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	name TEXT NOT NULL, -- ФИО специалиста
-	Proteins FLOAT NOT NULL, -- Должность
-	Fats FLOAT NOT NULL, -- Рабочий телефон
-	Carbohydrates FLOAT NOT NULL, -- Мобильный телефон
-	Kcal INTEGER NOT NULL);
+	proteins FLOAT NOT NULL, -- Должность
+	fats FLOAT NOT NULL, -- Рабочий телефон
+	carbohydrates FLOAT NOT NULL, -- Мобильный телефон
+	kcal INTEGER NOT NULL);
   
 1.2) Добавить данные из списка продуктов, скрипт уже репозитории
 

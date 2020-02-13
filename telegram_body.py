@@ -25,6 +25,7 @@ class Telegram_bot:
 
         @bot.message_handler(func=lambda message: True)
         def echo_all(message):
+            [x for x in dir(message)]
 	        bot.reply_to(message, message.text)
 
         bot.polling()
