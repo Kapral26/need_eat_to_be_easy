@@ -35,8 +35,6 @@ class Telegram_bot:
 
         bot.polling()
 
-    def chk_users(self, username):
-
 
 
 if __name__ == "__main__":
